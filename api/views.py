@@ -11,3 +11,4 @@ class QuestionList(ListCreateAPIView):
 class QuestionDetail(RetrieveDestroyAPIView):
     queryset = Question.objects.all()
     serializer_class = QuestionSerializer
+    
