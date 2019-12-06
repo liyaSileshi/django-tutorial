@@ -25,8 +25,7 @@ SECRET_KEY = 'o+a$cqbi@0$cx_%9uf15-wqbj*&r^=(owcw8rcwemt4i^571#p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['localhost', 'dj-tutorial-lt.herokuapp.com']
 
 # Application definition
 
@@ -125,3 +124,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
