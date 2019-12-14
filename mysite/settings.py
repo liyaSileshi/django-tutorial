@@ -25,7 +25,7 @@ SECRET_KEY = 'o+a$cqbi@0$cx_%9uf15-wqbj*&r^=(owcw8rcwemt4i^571#p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'dj-tutorial-lt.herokuapp.com']
+ALLOWED_HOSTS = ['localhost','127.0.0.1', 'dj-tutorial-lt.herokuapp.com']
 
 # Application definition
 
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
